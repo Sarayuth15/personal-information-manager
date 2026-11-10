@@ -1,0 +1,17 @@
+# Secrets - never commit real environment files
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Backend and frontend keep their own .gitignore files
+# (backend/.gitignore, frontend/.gitignore) for build output.

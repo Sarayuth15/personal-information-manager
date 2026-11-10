@@ -1,0 +1,5 @@
+# Tests run against a dedicated MySQL database (never the real one).
+# Create it once on your MySQL server; see docs/database.md.
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_TEST_DATABASE:pim_test}?sslMode=${MYSQL_SSL_MODE:PREFERRED}&connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true&characterEncoding=UTF-8
